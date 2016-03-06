@@ -6,6 +6,7 @@ html.main-search {
 
 .ui-keyboard {
 	left: 20%!important; top: 27%!important; 
+<<<<<<< HEAD
 }
 
 .ui-keyboard-button.ios-button-default.ios-button-action{
@@ -23,4 +24,6 @@ html.main-search {
 
 .ui-state-default.ui-keyboard-button {
 	background-image:none;
+=======
+>>>>>>> ed70ab480b4b79d0157d28c792aae44fa737afe2
 }
