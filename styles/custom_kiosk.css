@@ -1,0 +1,9 @@
+html.main-search { 
+	background-color:#222;
+	background-size: 50%;
+	background-position: right;
+}
+
+.ui-keyboard {
+	left: 20%!important; top: 27%!important; 
+}
