@@ -1,0 +1,26 @@
+html.main-search { 
+	background-color:#222;
+	background-size: 50%;
+	background-position: right;
+}
+
+.ui-keyboard {
+	left: 20%!important; top: 27%!important; 
+}
+
+.ui-keyboard-button.ios-button-default.ios-button-action{
+	border-bottom-right-radius: 0px;
+}
+
+.ui-keyboard-button.ios-button-default.ui-keyboard-bksp{
+	border-bottom-left-radius: 0px;
+}
+
+.ui-keyboard.ios-container .ui-keyboard-preview-wrapper{
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.ui-state-default.ui-keyboard-button {
+	background-image:none;
+}
