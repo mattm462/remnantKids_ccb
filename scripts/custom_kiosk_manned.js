@@ -1,8 +1,4 @@
 
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
-
 
 function hideAdmin() {
 	$(".actions").hide();
@@ -20,7 +16,7 @@ hideAdmin(); //enter kiosk mode on launch
 
 
 
-mousetrap key shortcuts
+//mousetrap key shortcuts
 Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
 Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
 
