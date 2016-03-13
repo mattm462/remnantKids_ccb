@@ -1,4 +1,8 @@
 
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
 
 function hideAdmin() {
 	$(".actions").hide();
