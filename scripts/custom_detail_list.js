@@ -1,19 +1,17 @@
 
 
 function hideAdmin() {
-	$(".actions").hide();
-	$('#main-form .title').html('Welcome!');
-	$('#main-form .sub-title').html('please scan barcode');
+	$("#header .right .group").hide();
+	$(".label-quantity").hide();
 };
 
 function showAdmin() {
-	$(".actions").show();
+	$("#header .right .group").show();
+	$(".label-quantity").show();
 };
 
 
 hideAdmin(); //enter kiosk mode on launch
-
-
 
 
 //mousetrap key shortcuts
