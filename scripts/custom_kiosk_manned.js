@@ -1,17 +1,13 @@
 
 
-$(window).load(function(){
-
 function hideAdmin() {
 	$(".actions").hide();
 	$('#main-form .title').html('Welcome!');
 	$('#main-form .sub-title').html('please scan barcode');
-	return false;
 };
 
 function showAdmin() {
 	$(".actions").show();
-    return false;
 };
 
 
@@ -20,7 +16,7 @@ hideAdmin(); //enter kiosk mode on launch
 
 
 
-//mousetrap key shortcuts
+mousetrap key shortcuts
 Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
 Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
 
@@ -28,7 +24,6 @@ Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a 
 
 console.log("[SUCCESS] External Javascript loaded.");
 
-}
 
 
 

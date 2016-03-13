@@ -1,10 +1,13 @@
 // ==UserScript==
 // @name        remnantKidsCheckIn
-// @namespace   remnantKidsCheckIn
+// @namespace   remnantKidsCheckIn-
 // @description remnantKidsCheckIn
 // @include     https://remnantchurch.ccbchurch.com/checkin_main.php*
 // @version     1
 // @resource cssSrc https://raw.githubusercontent.com/mattm462/remnantKids_ccb/master/styles/custom_kiosk.css
+// @require https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+// @require https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js
+// @require https://raw.githubusercontent.com/mattm462/remnantKids_ccb/master/scripts/mousetrap.min.js
 // @require https://raw.githubusercontent.com/mattm462/remnantKids_ccb/master/scripts/custom_kiosk_manned.js
 // @grant    GM_addStyle
 // @grant    GM_getResourceText
@@ -14,21 +17,3 @@
 GM_addStyle(GM_getResourceText("cssSrc"));
 console.log("[SUCCESS] Custom RemnantKids styles applied");
 
-
-
-// function addStyle(style) {
-// var head = document.getElementsByTagName("HEAD")[0];
-// // var ele = head.appendChild(window.document.createElement( 'style' ));
-// //   ele.type="text/css";
-// // ele.innerHTML = style;
-// // return ele;
-//   var link = head.appendChild(window.document.createElement( 'link' ));
-// link.type = 'text/css';
-// link.rel = 'stylesheet';
-// link.href = 'http://www.matthewmccurdy.com/remnantDesign.css'
-// return ele;
-// }
-
-    
-
-// addStyle(); 
