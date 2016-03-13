@@ -1,7 +1,6 @@
 html.main-search { 
-	background-color:#222;
-	background-size: 50%;
-	background-position: right;
+	background-color:#222; /* REMNANT GRAY */
+	background-position: 85% 50%;
 }
 
 .ui-keyboard {
@@ -25,14 +24,44 @@ html.main-search {
 	background-image:none;
 }
 
+/* Resize search box and text */
+
 #search-content .search {
 	background-image: none; !important
 	border:none;
 	margin-left:100px;
+	width:450px;
 }
 
 #search-content .search-text{
 	-moz-box-shadow: none;
--webkit-box-shadow: none;
-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	width:450px;
+	font-size: 40px;
+}
+
+.search-trigger{
+	display:none; /* Hide Mag glass */
+}
+
+
+#search-content .overlay {
+	top:16px;
+}
+
+#search-content .overlay .title {
+	font-size: 28px;
+	margin-right:17px;
+}
+
+#search-content .overlay .sub-title {
+	font-size: 24px;
+}
+
+/* Style actions box */
+#search-header .actions {
+	float:left;
+	margin-left: 100px;
+	background-color: #C3B530;
 }

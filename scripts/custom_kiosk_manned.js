@@ -3,6 +3,7 @@
 function hideAdmin() {
 	$(".actions").hide();
 	$('#main-form .title').html('Welcome!');
+	$('#main-form .title').hide();
 	$('#main-form .sub-title').html('please scan barcode');
 };
 
