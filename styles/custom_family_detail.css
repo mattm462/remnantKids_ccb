@@ -11,7 +11,7 @@ html.main-title{
 	background-image:none;
 	box-shadow:none;
 	height:94px;
-	background-color: #222;
+	background-color: #AD8A33;
 }
 
 #header .nav.center .title {
@@ -42,7 +42,6 @@ html.main-title{
 .button.edit-family,
 .button.manage-barcode,
 .button.edit-family-message {
-	background-color: #AD8A33;
 }
 
 .item-press {
@@ -84,8 +83,8 @@ html.main-title{
 	pointer-events:none;
 	background: repeating-linear-gradient(
 		45deg,
-		rgba(34, 34, 34, 0.1),
-		rgba(34, 34, 34, 0.1) 10px,
+		rgba(173, 138, 51, 0.2),
+		rgba(173, 138, 51, 0.2) 10px,
 		rgba(150, 150, 150, 0.1) 10px,
 		rgba(150, 150, 150, 0.1) 20px
 		);
