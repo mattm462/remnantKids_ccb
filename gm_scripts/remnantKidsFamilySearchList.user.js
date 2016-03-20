@@ -3,7 +3,8 @@
 // @namespace   remnantKidsFamilySearchList
 // @description remnantKidsFamilySearchList
 // @include     https://remnantchurch.ccbchurch.com/checkin_family_list.php*
-// @version     1.00
+// @include		https://remnantchurch.ccbchurch.com/checkin_family_create.php*
+// @version     1.01
 // @resource cssSrc https://rawgit.com/mattm462/remnantKids_ccb/master/styles/custom_family_search.css
 // @grant    GM_addStyle
 // @grant    GM_getResourceText
