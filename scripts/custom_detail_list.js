@@ -16,7 +16,7 @@ function showAdmin() {
 var $childRow = $('div.group-events').find('div.group-event');
 if( $childRow.hasClass('event-checked-in') ){ // .hasClass() returns BOOLEAN true/false
   $childRow.parents('div.item').addClass('disabledRow');
-  $('.event-checked-in').append("<div class=\"title\" id=\"customNote\"><span>See a volunteer to make changes. To check-out, scan the child's nametag at the main screen.</span></div>" );
+  $('.event-checked-in').append("<div class=\"title\" id=\"customNote\"><span>See a volunteer to make changes.</span><br><span>To check-out, scan the child's nametag at the main screen.</span></div>" );
 }
 
 

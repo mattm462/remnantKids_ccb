@@ -67,7 +67,7 @@ html.main-search {
 }
 
 /*Style welcome text */
-#weclomeMessage{
+#welcomeMessage{
 	color: rgb(255, 255, 255);
 	padding: 5px;
 	font-family: georgia;

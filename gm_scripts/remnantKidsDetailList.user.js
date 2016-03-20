@@ -3,7 +3,7 @@
 // @namespace   remnantKidsDetailList
 // @description remnantKidsDetailList
 // @include     https://remnantchurch.ccbchurch.com/checkin_family_detail.php*
-// @version     1.03
+// @version     1.04
 // @resource cssSrc https://rawgit.com/mattm462/remnantKids_ccb/master/styles/custom_family_detail.css
 // @grant    GM_addStyle
 // @grant    GM_getResourceText
