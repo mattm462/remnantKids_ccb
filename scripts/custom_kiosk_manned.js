@@ -5,10 +5,12 @@ function hideAdmin() {
 	//$('#main-form .title').html('Welcome!');
 	$('#main-form .title').html('');
 	$('#main-form .sub-title').html('scan barcode or enter phone number');
+	$('#search-text').attr('type','number');
 };
 
 function showAdmin() {
 	$(".actions").show();
+	$('#search-text').attr('type','text');
 };
 
 
