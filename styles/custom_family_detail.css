@@ -12,6 +12,7 @@ html.main-title{
 	box-shadow:none;
 	height:94px;
 	background-color: #AD8A33;
+	border-bottom: 2px solid #222;
 }
 
 #header .nav.center .title {
@@ -46,7 +47,7 @@ html.main-title{
 
 .item-press {
 	background-image:none;
-	/*	background-color: #AD8A33 !important;*/
+	background-color: #AD8A33 !important;
 }
 
 .ui-button {
@@ -90,10 +91,6 @@ html.main-title{
 		);
 }
 
-#note{
-	margin: 0px auto;
-	color: rgb(255, 255, 255);
-	width: 1000px;
-	text-align: center;
-	font-size: 20pt;
+#customNote{
+	color: #A40D08;
 }

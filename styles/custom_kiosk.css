@@ -1,6 +1,6 @@
 html.main-search { 
 	background-color:#222; /* REMNANT GRAY */
-	background-position: 50% 100%;
+	background-position: 85% 50%;
 }
 
 .ui-keyboard {
@@ -29,7 +29,7 @@ html.main-search {
 #search-content .search {
 	background-image: none; !important
 	border:none;
-	/*margin-left:100px;*/
+	margin-left:100px;
 	width:450px;
 }
 
@@ -64,4 +64,14 @@ html.main-search {
 	float:left;
 	margin-left: 100px;
 	background-color: #C3B530;
+}
+
+/*Style welcome text */
+#weclomeMessage{
+	color: rgb(255, 255, 255);
+	padding: 5px;
+	font-family: georgia;
+	font-style: italic;
+	font-size: 44pt;
+	margin-left: 100px;
 }

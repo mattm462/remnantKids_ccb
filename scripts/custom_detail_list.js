@@ -9,14 +9,14 @@ function showAdmin() {
 	$("#header .right .group").show();
 	$(".label-quantity").show();
 	$('.disabledRow').removeClass('disabledRow');
-	$('#note').remove();
+	$('#customNote').remove();
 };
 
 
 var $childRow = $('div.group-events').find('div.group-event');
 if( $childRow.hasClass('event-checked-in') ){ // .hasClass() returns BOOLEAN true/false
   $childRow.parents('div.item').addClass('disabledRow');
-  $('body').prepend('<div id="note"><p>A child has already been checked-in. See RemnantKids volunteer to make changes.<br/>To check-out, please claim your child and scan his or her nametag.</p></div>' );
+  $('.event-checked-in').append("<div class=\"title\" id=\"customNote\"><span>See a volunteer to make changes. To check-out, scan the child's nametag at the main screen.</span></div>" );
 }
 
 
