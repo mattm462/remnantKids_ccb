@@ -2,9 +2,9 @@
 
 function hideAdmin() {
 	$(".actions").hide();
-	//$('#main-form .title').html('Welcome!');
-	$('#main-form .title').html('');
-	$('#main-form .sub-title').html('scan barcode or enter phone number');
+	$('#main-form .title').html('Welcome!');
+	//$('#main-form .title').html('');
+	$('#main-form .sub-title').html('please scan barcode');
 	$('#search-text').prop('type','number');
 };
 
@@ -19,6 +19,9 @@ hideAdmin(); //enter kiosk mode on launch
 
 $(function() {
     $('#search-content').prepend('<div id="welcomeMessage"><span style="">Welcome!</span></div>'); //add welcome message
+    $('#search-content').append('<div class="detailMessage top"><span class="header">Checking In?</span><br><span class="message">Scan your barcode or enter your phone number.</span><br></div>'); //add welcome message
+    $('#search-content').append('<div class="detailMessage"><span class="header">Checking Out?</span><br><span class="message">Reunite with your child and scan his or her nametag.</span></div>'); //add welcome message
+
 });
 
 //mousetrap key shortcuts

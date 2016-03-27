@@ -29,7 +29,7 @@ html.main-search {
 #search-content .search {
 	background-image: none; !important
 	border:none;
-	margin-left:100px;
+	margin-left:150px;
 	width:450px;
 }
 
@@ -62,7 +62,7 @@ html.main-search {
 /* Style actions box */
 #search-header .actions {
 	float:left;
-	margin-left: 100px;
+	margin-left: 150px;
 	background-color: #C3B530;
 }
 
@@ -73,5 +73,28 @@ html.main-search {
 	font-family: georgia;
 	font-style: italic;
 	font-size: 44pt;
-	margin-left: 100px;
+	margin-left: 150px;
+}
+
+/*Style detail message */
+.detailMessage.top{
+	padding-top: 50px;
+}
+
+.detailMessage{
+	padding-top: 30px;
+	margin-left: 200px;
+}
+
+.detailMessage .header{
+  color:#CBD4CC;
+	font-family: georgia;
+	font-size: 24pt;
+}
+
+.detailMessage .message{
+  color:#fff;
+	font-family: 'Arial','Tahoma',sans-serif;
+	font-style: italic;
+	font-size: 14pt;
 }
