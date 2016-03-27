@@ -5,19 +5,21 @@ function hideAdmin() {
 	//$('#main-form .title').html('Welcome!');
 	$('#main-form .title').html('');
 	$('#main-form .sub-title').html('scan barcode or enter phone number');
-	$('#search-text').attr('type','number');
+	$('#search-text').prop('type','number');
 };
 
 function showAdmin() {
 	$(".actions").show();
-	$('#search-text').attr('type','text');
+	$('#search-text').prop('type','text');
 };
 
 
 hideAdmin(); //enter kiosk mode on launch
 
 
-$('#search-content').prepend('<div id="welcomeMessage"><span style="">Welcome!</span></div>'); //add welcome message
+$(function() {
+    $('#search-content').prepend('<div id="welcomeMessage"><span style="">Welcome!</span></div>'); //add welcome message
+});
 
 //mousetrap key shortcuts
 Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
