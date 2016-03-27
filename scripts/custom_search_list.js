@@ -16,10 +16,13 @@ function showAdmin() {
 
 hideAdmin(); //enter kiosk mode on launch
 
+$(function() {
 
-//mousetrap key shortcuts
-Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
-Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
+	//mousetrap key shortcuts
+	Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
+	Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
+});
+
 
 
 
