@@ -3,7 +3,7 @@
 // @namespace   remnantKidsCheckIn
 // @description remnantKidsCheckIn
 // @include     https://remnantchurch.ccbchurch.com/checkin_main.php*
-// @version     1.05
+// @version     1.06
 // @resource cssSrc https://rawgit.com/mattm462/remnantKids_ccb/master/styles/custom_kiosk.css
 // @grant    GM_addStyle
 // @grant    GM_getResourceText
