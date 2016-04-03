@@ -105,7 +105,7 @@ html.main-title{
 
 /* print label styles */
 
-#print-content-only td {
+#print-content-only .bottom td {
   white-space: normal;
 }
 
