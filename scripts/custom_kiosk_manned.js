@@ -14,19 +14,47 @@ function showAdmin() {
 };
 
 
-hideAdmin(); //enter kiosk mode on launch
+
+
+
+
+// //used to get URL parameters for admin checkout
+// function GetURLParameter(sParam)
+// {
+//     var sPageURL = window.location.search.substring(1);
+//     var sURLVariables = sPageURL.split('&');
+//     for (var i = 0; i < sURLVariables.length; i++) 
+//     {
+//         var sParameterName = sURLVariables[i].split('=');
+//         if (sParameterName[0] == sParam) 
+//         {
+//             return sParameterName[1];
+//         }
+//     }
+// };
+
+// //if a url parameter with checkout code is passed from the family page, initiate the checkout
+// function initiateCheckout(){
+// 	var adminCheckoutCode = GetURLParameter('adminCheckout'); //get code
+// 	if (typeof adminCheckoutCode != "undefined"){ //if code exists
+// 		$('#search-text').val(adminCheckoutCode); //put code in form
+// 		$('#main-form a').trigger('click'); //submit form
+// 	}
+// };
 
 
 $(function() {
+	hideAdmin(); //enter kiosk mode on launch
     $('#search-content').prepend('<div id="welcomeMessage"><span style="">RemnantKids</span></div>'); //add welcome message
     $('#search-content').append('<div class="detailMessage top"><span class="header">Checking In?</span><br><span class="message">Scan your barcode or enter your phone number.</span><br></div>'); //add instruction top
     $('#search-content').append('<div class="detailMessage"><span class="header">Checking Out?</span><br><span class="message">Reunite with your child and scan his or her nametag.</span></div>'); //add second instruction
-
+    //initiateCheckout();
 	//mousetrap key shortcuts
 	Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
 	Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
-});
 
+
+});
 
 
 

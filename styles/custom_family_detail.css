@@ -80,6 +80,11 @@ html.main-title{
 	font-size:23px;
 }
 
+/*.item .group-events {
+	width:475px; 
+} 
+*/
+
 .disabledRow{
 	pointer-events:none;
 	background: repeating-linear-gradient(
