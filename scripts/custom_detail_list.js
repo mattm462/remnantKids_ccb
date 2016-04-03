@@ -38,7 +38,7 @@ function disableRow() {
 // };
 
 function tagModifications(){
-	$('#pickup-tag .message').html('*** Keep this ticket. Reunite with your children and scan their nametags to check out of RemnantKids. ***');
+	$('#pickup-tag .message').html('*** Keep this ticket. Pick up your children and scan their nametags to check out of RemnantKids. ***');
 }
 
 $(function() {
