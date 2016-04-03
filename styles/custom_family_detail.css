@@ -84,6 +84,9 @@ html.main-title{
 	width:475px; 
 } 
 */
+#appendedMessage {
+	font-style:normal;
+}
 
 .disabledRow{
 	pointer-events:none;
@@ -98,4 +101,19 @@ html.main-title{
 
 #customNote{
 	color: #A40D08;
+}
+
+/* print label styles */
+
+#print-content-only td {
+  white-space: normal;
+}
+
+#print-content-only .bottom {
+  height: 0.2in;
+}
+
+#print-content-only .left,
+#print-content-only .right {
+  height: 1.50in;
 }

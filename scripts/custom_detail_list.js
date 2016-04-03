@@ -37,8 +37,13 @@ function disableRow() {
 
 // };
 
+function tagModifications(){
+	$('#pickup-tag .message').html('*** Keep this ticket. Reunite with your children and scan their nametags to check out of RemnantKids. ***');
+}
+
 $(function() {
 	hideAdmin(); //enter kiosk mode on launch
+	tagModifications();
 	//mousetrap key shortcuts
 	Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
 	Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
