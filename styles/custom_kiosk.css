@@ -82,17 +82,17 @@ html.main-search {
 }
 
 .detailMessage{
-	background: repeating-linear-gradient(
+/*	background: repeating-linear-gradient(
 		135deg,
 		#222222,
 		#222222 10px,
 		#333333 10px,
 		#333333 20px
-		);
+		);*/
 	padding: 20px;
 	margin-left: 150px;
 	margin-top: 20px;
-	width:540px;
+	width:580px;
 }
 
 .detailMessage .header{
