@@ -51,7 +51,7 @@ $(function() {
 });
 
 function hidePickupTag(){
-	$('#header .nav.left .group').append('<li><a id="button_NoTag" href="javascript:void(0);" class="button">Don\'t print pick-up tag.</a></li>');
+	$('#header .nav.left .group').append('<li><a id="button_NoTag" href="javascript:void(0);" class="button">I am volunteering today.</a></li>');
 
 
 $( '#button_NoTag' ).click(function( event ) {
