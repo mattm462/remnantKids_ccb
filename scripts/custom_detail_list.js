@@ -44,10 +44,23 @@ function tagModifications(){
 $(function() {
 	hideAdmin(); //enter kiosk mode on launch
 	tagModifications();
+	hidePickupTag();
 	//mousetrap key shortcuts
 	Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
 	Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
 });
+
+function hidePickupTag(){
+	$('#header .nav.left .group').append('<li><a id="button_NoTag" href="javascript:void(0);" class="button">Don\'t print pick-up tag.</a></li>');
+
+
+$( '#button_NoTag' ).click(function( event ) {
+  event.preventDefault();
+  $('#pickup-tag').css("display", "none");
+  console.log("Pickup Tag HIDDEN");
+  $('#button_NoTag').css("display", "none");
+});
+}
 
 
 
