@@ -4,7 +4,7 @@ function hideAdmin() {
 	$("#header .right .group").hide();
 	$(".label-quantity").hide();
 	disableRow(); //block out rows already checked-in
-	$("#checkoutCode").hide();
+	$("#checkoutLink").hide();
 
 };
 
