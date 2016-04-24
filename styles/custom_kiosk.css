@@ -31,6 +31,14 @@ html.main-search {
 	border:none;
 	margin-left:150px;
 	width:450px;
+	background: repeating-linear-gradient(
+		135deg,
+		#222222,
+		#222222 10px,
+		#333333 10px,
+		#333333 20px
+		);
+	padding:25px;
 }
 
 #search-content .search-text{
