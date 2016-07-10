@@ -61,6 +61,14 @@ $(function() {
 	Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
 	Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
     setInterval(focus, 5000); //set focus to the search box every 5 seconds
+    
+    
+    
+    $("<link/>", {
+	   rel: "stylesheet",
+	   type: "text/css",
+	   href: "https://rawgit.com/mattm462/remnantKids_ccb/master/styles/custom_kiosk.css"
+	}).appendTo("head");
 
 });
 
