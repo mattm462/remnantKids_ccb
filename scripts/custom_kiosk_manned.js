@@ -45,7 +45,7 @@ function showAdmin() {
 
 //set focus to the search box every 5 seconds
 function focus() {
-   if($("#search-text") && !$("#search-text").is(":focus") && $("input:visible").length < 2)
+   if($("#search-text") && !$("#search-text").is(":focus") && $(":input:visible").length < 2)
 	$("#search-text").focus();
 }
 
