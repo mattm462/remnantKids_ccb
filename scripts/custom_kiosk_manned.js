@@ -43,6 +43,14 @@ function showAdmin() {
  };
 
 
+//set focus to the search box every 5 seconds
+function focus() {
+   if($("#search-text") && $("#search-text").is(!":focus"))
+	$("#search-text").focus();
+}
+
+
+
 $(function() {
 	hideAdmin(); //enter kiosk mode on launch
     $('#search-content').prepend('<div id="welcomeMessage"><span style="">RemnantKids</span></div>'); //add welcome message
@@ -52,16 +60,9 @@ $(function() {
 	//mousetrap key shortcuts
 	Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
 	Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
-
+    setInterval(focus, 5000); //set focus to the search box every 5 seconds
 
 });
-
-//set focus to the search box every 5 seconds
-function focus() {
-   if($("#search-text") && $("#search-text").is(!":focus"))
-	$("#search-text").focus();
-}
-setInterval(focus, 5000);
 
 
 
