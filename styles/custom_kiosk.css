@@ -116,3 +116,8 @@ html.main-search {
 	font-style: italic;
 	font-size: 14pt;
 }
+
+.group-wrapper .dup-check-textbox{
+	text-align:left;	
+}
+}
