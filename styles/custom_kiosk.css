@@ -2,7 +2,7 @@ html.main-search {
 	background-color:#222224; /* REMNANT GRAY (with a wee hint of blue)*/
 	background-position: 85% 50% !important;
 	/*christmas logo*/
- 	background-image: url('https://cdn.rawgit.com/mattm462/remnantKids_ccb/master/img/logo_christmas.png');
+ 	/*background-image: url('https://cdn.rawgit.com/mattm462/remnantKids_ccb/master/img/logo_christmas.png');*/
 }
 
 .ui-keyboard {
