@@ -46,8 +46,14 @@ $(function() {
 	tagModifications();
 	hidePickupTag();
 	//mousetrap key shortcuts
-	Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
-	Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
+	
+	var checkExist = setInterval(function() {
+	   if (typeof Mousetrap !== 'undefined' && $.isFunction(Mousetrap )) {
+		Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
+		Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
+	      clearInterval(checkExist);
+	   } 
+	}, 100);
 });
 
 function hidePickupTag(){
