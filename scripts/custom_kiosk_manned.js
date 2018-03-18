@@ -59,12 +59,9 @@ $(function() {
     initiateCheckout();
 	
 	var checkExist = setInterval(function() {
-	   if ($('#the-canvas').length) {
-		if (typeof Mousetrap !== 'undefined' && $.isFunction(Mousetrap )){
-			Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
-			Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
-		}
-		   
+	   if (typeof Mousetrap !== 'undefined' && $.isFunction(Mousetrap )) {
+		Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
+		Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
 	      clearInterval(checkExist);
 	   }
 	}, 100);
