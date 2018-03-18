@@ -57,9 +57,21 @@ $(function() {
     $('#search-content').append('<div class="detailMessage top"><span class="message">One & Two Year Olds have moved to the last classroom.</span><br><br><br><span class="header">Checking In?</span><br><span class="message">Scan your barcode or enter your phone number.</span><br></div>'); //add instruction top
     $('#search-content').append('<div class="detailMessage"><span class="header">Checking Out?</span><br><span class="message">Pick up your children, then scan their nametags on your way out.</span></div>'); //add second instruction
     initiateCheckout();
+	
+	var checkExist = setInterval(function() {
+	   if ($('#the-canvas').length) {
+		if (typeof Mousetrap !== 'undefined' && $.isFunction(Mousetrap )){
+			Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
+			Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
+		}
+		   
+	      clearInterval(checkExist);
+	   }
+	}, 100);
+	
+	
 	//mousetrap key shortcuts
-	Mousetrap.bind(['esc'], hideAdmin); //hide admin stuff with esc
-	Mousetrap.bind(['option+a', 'alt+a'], showAdmin); //Enter Admin mode with alt-a or option-a
+	
     setInterval(focus, 5000); //set focus to the search box every 5 seconds
     
     
