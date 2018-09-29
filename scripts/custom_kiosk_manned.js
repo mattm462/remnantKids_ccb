@@ -54,7 +54,7 @@ function focus() {
 $(function() {
 	hideAdmin(); //enter kiosk mode on launch
     $('#search-content').prepend('<div id="welcomeMessage"><span style="">RemnantKids</span></div>'); //add welcome message
-    $('#search-content').append('<div class="detailMessage top"><span class="message">One & Two Year Olds have moved to the last classroom.</span><br><br><br><span class="header">Checking In?</span><br><span class="message">Scan your barcode or enter your phone number.</span><br></div>'); //add instruction top
+    $('#search-content').append('<div class="detailMessage top"><br><span class="header">Checking In?</span><br><span class="message">Scan your barcode or enter your phone number.</span><br></div>'); //add instruction top
     $('#search-content').append('<div class="detailMessage"><span class="header">Checking Out?</span><br><span class="message">Pick up your children, then scan their nametags on your way out.</span></div>'); //add second instruction
     initiateCheckout();
 	
