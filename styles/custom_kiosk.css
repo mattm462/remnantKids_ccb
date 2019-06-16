@@ -122,3 +122,5 @@ html.main-search {
 .group-wrapper .dup-check-textbox{
 	text-align:left!important;	
 }
+
+#gritter-notice-wrapper{ right: 5%!important; left:auto!important; }
